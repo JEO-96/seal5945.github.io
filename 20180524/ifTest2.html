@@ -19,22 +19,32 @@
  alert("자바 스크립트 환영!!");
  }
  </script>
- <title>자바 스크립트 실습</title>
+ <title>웹 프로그래밍 실습</title>
  </head>
  <body>
   <header>
-   <h2>자바 스크립트를 환영합니다</h2></header>
+   <h2>실습 대환영</h2></header>
    <nav>
     <ul>
-     <li><a href="http://www.dju.ac.kr">대학</a></li>
-     <li><a href="http://hive.dju.ac.kr">실습서버</a></li>
+     <li><a href="http://jsp.dju.ac.kr">실습서버</a></li>
     </ul></nav>
-   <section>
-    <h2>자바스크립트실행합니다</h2>
-    <script>fnTest();</script>
-   </section>
+<section><h4>연산자 예제 실습</h4>
+    <script>
+ var score = window.prompt("점수 입력:");
+ score = parseFloat(score);
+ var grade = undefined;
+ if(score >=90){
+  grade = "A";
+ }else if(score >=80){
+  grade = "B";
+ }else if(score >=70){
+  grade = "C";
+ }else{
+  grade = "F";
+ }
+ document.write("grade=",grade,"<br/>");
+ </script></section>
    <footer>
     <p>&copy; 20XXMade by Korea. All rights reserved.</p></footer>
   </body>
   </html>
- 

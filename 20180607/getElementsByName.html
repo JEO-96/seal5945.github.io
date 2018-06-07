@@ -7,10 +7,10 @@
 <link rel="stylesheet" href="https://seal5945.github.io/20180502/css/sample.css"/>
 <script src="https://seal5945.github.io/20180502/js/sample.js"></script>
 <script>
- function fnGetElementsById(){
-  var accessTag = document.getElementById("input_id1");
+ function fnGetElementsByName(){
+  var accessTag = document.getElementByName("input_id1");
   console.log(accessTag.tagName);
-  accessTag.setAttribute("value","getElementById실행!");
+  accessTag.setAttribute("value","getElementByName실행!");
  }
 </script><title>웹 프로그래밍 실습</title></head>
 <body>
@@ -23,6 +23,6 @@
 <input id="button_id1" type="button" name="user_id" value="입력"/><br/>
 빈칸에 검색어를 넣고 입력해 주세요.
 </form>
-<form><input type="button" onclick="fnGetElementsById();" value="변경실행"/></form>
+<form><input type="button" onclick="fnGetElementsByName();" value="변경실행"/></form>
 </section>
 </body></html>
